@@ -21,6 +21,4 @@ void main()
     num2 = num2 - num1;
     //display value of variables after swap
     printf("\n num1 = %d, num2 = %d",num1,num2);
-
-
 }

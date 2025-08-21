@@ -1,0 +1,8 @@
+process
+---------------------------------------------------------
+1) write a program to calculate and display area of room. 
+2) write a program to calculate and display area of triangle.
+3) write a program to calculate and display simple interest 
+4) write a program to convert and display meters into KM and remaining meters 
+5) write a program to convert and display inch into KM and remaining meters and remaining inches
+
