@@ -31,8 +31,9 @@ use wise categories of operators
   examples are + - * / %
  
 2) relational operators/ comparison 
+--------------------------------------------------------------------------------------------
+
   it is used to compare variables/value. it always give result in terms true (1) or false(0)
-  
   1 == used to check 2 variable has same value or not  
   2 != used to check 2 variable has different value or not  
   3 <  used to check whether left side variable is less then right side variable or not 
@@ -41,10 +42,14 @@ use wise categories of operators
   6 >= used to check right side variable is greater then or equal to left side variable
 
 3) logical operators.
-    logical operators are used to combine two or more relational expressions. there are 3 logical operators
+    logical operators are used to join two or more relational expressions and it also returns either 1 or 0. there are 3 logical operators
          for example 
          (1)   (2)
          a < b logical-operator b > c 
+         a < b && b > c 
+         a < b || b > c
+         !a == b  
+        
         1) and operator (&&)
             and operators check both relational expressions. if both expressions are true(1) it return true(1) otherwise it return false(0)
         2) or operator (||)
@@ -73,7 +78,6 @@ use wise categories of operators
             first in increment then assign
     a = 10 
     b = 0 
-
     b = a  // 10 
     a= a + 1 // 11
 

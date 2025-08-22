@@ -1,4 +1,5 @@
 // concept of relational operator
+// when expression has relational operator, it is called realtional expression
 #include<stdio.h>
 void main()
 {
