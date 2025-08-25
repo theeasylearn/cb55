@@ -62,12 +62,15 @@ use wise categories of operators
     assignment operators are used to write down any mathematical expressions in shorter way. 
 
     assignment operators 
+    a = 10 
+    b = 1
     += can be as a+=b when we need write a = a + b
     += can be as a+=1 when we need write a = a + 1
     -= can be as a-=b when we need write a = a - b
     *= can be as a*=b when we need write a = a * b
     /= can be as a/=b when we need write a = a / b
     %= can be as a%=b when we need write a = a % b
+    
 -----------------------------------------------------------------------
     unary operator
 

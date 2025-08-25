@@ -6,3 +6,4 @@ process
 4) write a program to convert and display meters into KM and remaining meters 
 5) write a program to convert and display inch into KM and remaining meters and remaining inches
 
+6) write a program to convert given bytes into KB, MB, GB (use long int variable & float)
