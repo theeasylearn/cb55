@@ -7,3 +7,11 @@ process
 5) write a program to convert and display inch into KM and remaining meters and remaining inches
 
 6) write a program to convert given bytes into KB, MB, GB (use long int variable & float)
+
+if 
+-------
+1) write a program to accept purchase_price and sale_price from user & findout difference. if difference is negative then display message you have made loss of difference and if difference is positive then display message you have made profit of difference
+
+2) write a program to convert 24 hours time into 12 hours format time and display it with AM PM message. 
+
+3) write a program to accept length and width of shape from user. findout & display shape is landscape or potrait. 
