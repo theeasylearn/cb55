@@ -15,3 +15,9 @@ if
 2) write a program to convert 24 hours time into 12 hours format time and display it with AM PM message. 
 
 3) write a program to accept length and width of shape from user. findout & display shape is landscape or potrait. 
+
+if else 
+1) write a program to findout which player is more strike rate amongs 2 players. accept 2 players runs and balls
+
+2) write a program to findout square of qube of number. if number is odd findout square otherwise findout qube. accept number from user 
+
