@@ -1,1 +1,1 @@
-net_salary
+one
