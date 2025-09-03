@@ -65,3 +65,15 @@ nested decision making
     Capricorn: December 22–January 19
     Aquarius: January 20–February 18
     Pisces: February 19–March 20
+
+loop 
+2   4   6   8   ....    200
+1   8   27  64  125     .... 1000
+
+multiplication table 
+10 X 1 = 10
+10 X 2 = 20
+10 X 3 = 30
+10 X 4 = 40
+....
+10 X 10 = 100
