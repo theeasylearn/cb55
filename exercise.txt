@@ -77,3 +77,10 @@ multiplication table
 10 X 4 = 40
 ....
 10 X 10 = 100
+
+write a program to findout power of given base and exponent 
+    input base 2 exponent 5
+    process 2x2x2x2x2 
+    output = 32
+
+    
