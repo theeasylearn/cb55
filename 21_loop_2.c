@@ -4,11 +4,12 @@
 void main()
 {
 
+    //initilization
     int number = 0, square;
 
-    while(number<10)
+    while(number<10) //condition
     {
-        number = number + 1; // 2
+        number = number + 1; // increment/decrement 2
         square = number * number;
         if (number % 2 == 0)
         {

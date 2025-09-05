@@ -83,4 +83,14 @@ write a program to findout power of given base and exponent
     process 2x2x2x2x2 
     output = 32
 
-    
+for loop 
+----------------------
+write a program to display ascii table of capital A TO Z using for loop. 
+
+write a program to findout whether given 3 digit number is armstrong no or not 
+input : 153
+process     1x1x1 + 5x5x5 + 3x3x3 = 153
+input : 153 == 153 armstrong
+
+//below number are armstrong 
+153, 370, 371, 407
