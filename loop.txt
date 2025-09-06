@@ -56,7 +56,7 @@ for(;;)
   do 
   {
      printf("%d",count); //80
-     count=count - 10; //70
+     count=count - 10; //80
   }while(count>=10); //0>=10
 printf("\n good bye");
 

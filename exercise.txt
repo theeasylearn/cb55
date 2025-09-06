@@ -94,3 +94,11 @@ input : 153 == 153 armstrong
 
 //below number are armstrong 
 153, 370, 371, 407
+
+do while loop
+--------------------------------------
+    1) create menu driven program that will run until user press 0 and accept month no from user and should display all indian public holidays falls in that particular month of 2026.
+
+    2) write a program to findout whether given number is prime number or not 
+
+    3) 
