@@ -102,3 +102,30 @@ do while loop
     2) write a program to findout whether given number is prime number or not 
 
     3) 
+
+pattern 
+-------------------------
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+1
+1 0
+1 0 1
+1 0 1 0
+1 0 1 0 1
+
+5
+5 4
+5 4 3
+5 4 3 2
+5 4 3 2 1
+
+a 
+b c
+d e f
+g h i j 
+k l m n o 
+p q r s t u 
