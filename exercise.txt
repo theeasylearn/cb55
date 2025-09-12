@@ -177,4 +177,9 @@ A
     * *
      *
 
-     
+functions
+--------------------
+1) write a program to display current date on screen using user defined function 
+2) write a program to display current time on screen using user defined function 
+3) write a program to display sum of given two number on screen using user defined function 
+4) write a program to calculate display simple interest of given amount, rate & year
