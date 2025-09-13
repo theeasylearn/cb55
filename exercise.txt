@@ -166,7 +166,6 @@ A
     1 0 1
   1 0 1 0
 1 0 1 0 1
-
      *
     * *
    * * *
@@ -176,10 +175,14 @@ A
    * * *
     * *
      *
-
 functions
 --------------------
 1) write a program to display current date on screen using user defined function 
 2) write a program to display current time on screen using user defined function 
 3) write a program to display sum of given two number on screen using user defined function 
 4) write a program to calculate display simple interest of given amount, rate & year
+5) write a program that will return grams of 1 kg  using user defined function  (with return value without argument) 
+6) write a program that will return bytes of 1 kb using user defined function  (1024) (with return value without argument) 
+7) write a program that will return surface area of cylinder  using user defined function  (with return value with argument)
+8) write a program that will return surface area of sphere  using user defined function  (with return value with argument)
+

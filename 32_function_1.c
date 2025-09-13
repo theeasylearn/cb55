@@ -5,7 +5,7 @@
 void printStar()
 {
     printf("\n");
-    for (int count = 1; count <= 101; count++)
+    for (int count = 1; count <= 100; count++)
     {
         printf("*");
     }
@@ -21,13 +21,34 @@ void printLetter(char letter, int times)
     }
     printf("\n");
 }
+//with return value without argument
+float getPi()
+{
+    float pi = 22.0/7;
+    return pi;
+}
+//with return value with argument
+int getSquare(int number)
+{
+    int square = number * number;
+    return square;
+}
 void main()
 {
-    printStar(); // calling function
-    printLetter('^', 120);
-    printf("the easylearn academy");
-    printStar(); // calling function
-    printf("105, eva surbhi, opp aksharwadi temple, bhavnagar");
-    printStar();
-    printLetter('@', 80);
+    int radius,square;
+    float pi,area;
+    // printStar(); // calling function
+    // printLetter('^', 120);
+    // printf("the easylearn academy");
+    // printStar(); // calling function
+    // printf("105, eva surbhi, opp aksharwadi temple, bhavnagar");
+    // printStar();
+    // printLetter('@', 80);
+    printf("enter circle radius");
+    scanf("%d",&radius);
+    //calculate area 
+    pi = getPi();
+    square = getSquare(radius);
+    area = pi * square; 
+    printf("area = %f",area);
 }
