@@ -186,3 +186,11 @@ functions
 7) write a program that will return surface area of cylinder  using user defined function  (with return value with argument)
 8) write a program that will return surface area of sphere  using user defined function  (with return value with argument)
 
+array 
+-------------------------------
+
+1) write a program to create array of float which store 10 family members weight. findout & display heaviest person and lightest person in family
+
+2) write a program to store 10 person age into array. findout and display average person age. 
+
+3

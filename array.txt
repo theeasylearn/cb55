@@ -28,7 +28,7 @@ age[0] = 25;
 how to access/display array
 printf("%d",age[0]);
 
-how to store value into array
+how to take input from user into array
 scanf("%d",&age[0]);
 
 types of array 
