@@ -193,4 +193,14 @@ array
 
 2) write a program to store 10 person age into array. findout and display average person age. 
 
-3
+3) write a program to findout largest number from numeric array which is statically initilized.
+
+4) write a program to count odd and even numbers in numeric array 
+
+5) write a program to display all the values greater given value in sorted numeric array
+
+6) write a to make sum of two same sized float array into third array and display it 
+  output 
+      a = 10.10,20.10,30.10,40.10,50.10
+      b = 1.11,2.11,3.11,4.11,5.11
+      ans = 11.11,22.21,33.21,51.31,55.21
