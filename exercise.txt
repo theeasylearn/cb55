@@ -204,3 +204,14 @@ array
       a = 10.10,20.10,30.10,40.10,50.10
       b = 1.11,2.11,3.11,4.11,5.11
       ans = 11.11,22.21,33.21,51.31,55.21
+
+7) write a program to sort integer array into descending order (highest to lowest)
+
+8) findout 2nd smallest and 2nd largest value from sorted array 
+    sorted array {11,25,40,50,100};
+    2nd smallest number 25
+    2nd larget number 50
+
+9) write a program to reverse array 
+    original array {100,25,50,40,11}
+    reverse array {11,40,50,25,100}

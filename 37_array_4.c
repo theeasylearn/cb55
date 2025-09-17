@@ -1,5 +1,5 @@
 /*
-    write a program to findout position of given value in long sprted array
+    write a program to findout position of given value in long sorted array
  */
 #include <stdio.h>
 void main()

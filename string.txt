@@ -3,9 +3,9 @@ string is sequence of letters that ends with \0 (null).
 some example of string 
 name,surname,address, city etc 
 
-there is no datatype in c language to store string. so we use 1d array of character to store string.
-how to create string?
+there is no datatype in to store string c language. so we use 1 dimension array of character to store string.
 
+how to create string (1d array of char)?
 char name[32],surname[32],address[512];
 
 how to take input from user in string usinc scanf? 
