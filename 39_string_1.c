@@ -19,5 +19,5 @@ void main()
     gets(address); //gets function can take input with space 
 
     printf("name = %s surname = %s address = %s ",name,surname,address);
-
+    
 }

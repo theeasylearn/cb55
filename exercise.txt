@@ -215,3 +215,22 @@ array
 9) write a program to reverse array 
     original array {100,25,50,40,11}
     reverse array {11,40,50,25,100}
+
+  string 
+  ----------------------------------
+
+  1) write a program to count words in given string 
+      input : Kishan Paramar 
+      output : 2 words 
+      input : I Love India 
+      output : 3 words 
+
+  2) write a program to count digits in given string 
+      input : ankit3385
+      ouput : 4 digits 
+  
+  3) write a program to reverse given string into another string 
+      input : ankit 
+      output : tikna 
+
+  
