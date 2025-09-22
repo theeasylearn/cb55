@@ -233,4 +233,22 @@ array
       input : ankit 
       output : tikna 
 
+  2d array 
+  1) write a program to display 2d array in reverse. accept input from  user 
+      input 
+      ankit patel 
+      diya patel 
+      jiya patel 
+      kishan parmar 
+      mansi shukla 
+
+      ouptut 
+      mansi shukla 
+      kishan parmar 
+      jiya patel 
+      diya patel 
+      ankit patel
+
+  2)  write a program to display 2d array in uppercase. accept input from  user in lower case. 
+
   
