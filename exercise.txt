@@ -251,4 +251,11 @@ array
 
   2)  write a program to display 2d array in uppercase. accept input from  user in lower case. 
 
-  
+structure
+------------------------
+1) create structure to store below book detail & display it  
+    book name, author name, price, pages
+
+2) create structure to store below cricket player detail & display it. 
+    name, runs, match, 50s, 100s, average, strike rate, age 
+
