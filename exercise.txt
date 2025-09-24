@@ -259,3 +259,9 @@ structure
 2) create structure to store below cricket player detail & display it. 
     name, runs, match, 50s, 100s, average, strike rate, age 
 
+3) create array of structure to store below product detail & display it  
+    name, price, stock, 
+    also calculate total price of all products & display it. 
+    use user defined functions for input, calculate total and display products 
+
+
