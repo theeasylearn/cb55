@@ -20,7 +20,6 @@ void display(int stack[]);
 int peek(int stack[]);
 int isEmpty(int stack[]);
 int count(int stack[]);
-
 void main()
 {
     int stack[SIZE];
@@ -29,7 +28,7 @@ void main()
     do
     {
         printf("\n press 1 to push new item");
-        printf("\n press 2 to pop existingitem");
+        printf("\n press 2 to pop existing item");
         printf("\n press 3 to display all items in LIFO manner (top to bottom)");
         printf("\n press 4 to peek an item");
         printf("\n press 5 to to check stack is empty or not ");
@@ -44,20 +43,37 @@ void main()
             push(stack, value);
             break;
         case 2: // if choice == 2
-            printf("remove item");
+            value = pop(stack);
+            if(value == -1)
+            {
+                printf("stack underflow, stack is empty so can not remove item from it.");
+            }
+            else 
+            {
+                printf("top most item removed from stack %d",value);
+            }
             break;
         case 3:
             display(stack);
             break;
         case 4:
             value = peek(stack);
-            printf("top most value in stack = %d",value);
+            printf("top most value in stack = %d", value);
             break;
         case 5:
-            printf("check stack is empty or not");
+            value = isEmpty(stack);
+            if (value == -1)
+            {
+                printf("stack is empty");
+            }
+            else 
+            {
+                printf("stack has value(s)");
+            }
             break;
         case 6:
-            printf("count items ");
+            value = count(stack);
+            printf("stack has %d items",value);
             break;
         case 0:
             printf("end of program");
@@ -68,7 +84,7 @@ void main()
         }
     } while (choice != 0);
 }
-//definition(function body)
+// definition(function body)
 
 void push(int stack[], int value)
 {
@@ -83,18 +99,45 @@ void push(int stack[], int value)
         printf("\n stack overflow, means we can not insert new value into stack as it full");
     }
 }
-//definition(function body)
+// definition(function body)
 void display(int stack[])
 {
+    char any;
     int index = top;
     while (index >= 0)
     {
         printf("\n %d", stack[index]); // index = 4 -> (50)
         index--;
     }
+    printf("\n Press any key to continue");
+    fflush(stdin);
+    scanf("%c",&any);
 }
 int peek(int stack[])
 {
     int top_most_value = stack[top];
     return top_most_value;
+}
+int isEmpty(int stack[])
+{
+    if(top == -1)
+        return -1;
+    else 
+        return 1;
+}
+int count(int stack[])
+{
+    int temp = top+1;
+}
+int pop(int stack[])
+{
+    if(top == -1)
+        return top;
+    else 
+    {
+        int temp = stack[top];
+        stack[top] = 0;
+        top--;
+        return temp;
+    }
 }
