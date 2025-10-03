@@ -11,15 +11,15 @@ write a menu driven program to work on queue
 #include <stdio.h>
 #define SIZE 5
 // function declration
-void insert(int quque[],int value);
+void insert(int quque[], int value);
 int delete(int quque[]);
 void display(int queue[]);
 int isEmpty();
 int count();
-int front=-1,rear=-1;
+int front = -1, rear = -1;
 void main()
 {
-    //create array
+    // create array
     int queue[SIZE];
     int value;
 
@@ -37,12 +37,20 @@ void main()
         {
         case 1:
             printf("Enter new value to insert in quque");
-            scanf("%d",&value);
-            insert(queue,value);
+            scanf("%d", &value);
+            insert(queue, value);
             break;
 
         case 2:
-            printf("delete from quque");
+            value = delete(queue);
+            if (value == -1)
+            {
+                printf("queue is empty");
+            }
+            else
+            {
+                printf("value removed from queue %d", value);
+            }
             break;
 
         case 3:
@@ -50,11 +58,27 @@ void main()
             break;
 
         case 4:
-            printf("check queue is empty or not");
+            value = isEmpty(queue);
+            if (value == -1)
+            {
+                printf("queue is empty");
+            }
+            else
+            {
+                printf("queue has value(s)");
+            }
             break;
 
         case 5:
-            printf("count no of items in quque");
+            value = count(queue);
+            if (value <=0)
+            {
+                printf("queue is empty");
+            }
+            else
+            {
+                printf("queue has %d items", value);
+            }
             break;
 
         case 0:
@@ -67,41 +91,78 @@ void main()
         }
     } while (choice != 0);
 }
-//define(code) insert function
-void insert(int queue[],int value)
+// define(code) insert function
+void insert(int queue[], int value)
 {
-    if(front == -1 && rear == -1)
+    if (front == -1 && rear == -1)
     {
-        front=rear=0; //chain assignment (assign same value to multiple variable)
+        front = rear = 0; // chain assignment (assign same value to multiple variable)
         queue[rear] = value;
     }
-    else if(rear<SIZE-1) //0<5-1
+    else if (rear < SIZE - 1) // 0<5-1
     {
         rear = rear + 1;
         queue[rear] = value;
     }
-    else 
+    else
     {
         printf("queue overflow");
     }
 }
 void display(int quque[])
 {
-    if(front == -1 && rear == -1)
+    if (front == -1 && rear == -1)
     {
         printf("queue is empty");
     }
-    else if(front>rear)
+    else if (front > rear)
     {
         printf("queue is empty");
+    }
+    else
+    {
+        printf("\n");
+        for (int index = front; index <= rear; index++)
+        {
+            printf("\t %d", quque[index]);
+        }
+        printf("\n");
+    }
+}
+int delete(int queue[])
+{
+    if (front == -1 || front > rear)
+    {
+        return -1; // queue is empty
+    }
+    else
+    {
+        int temp = queue[front]; // temp = 10
+        queue[front] = 0;
+        front++;
+        return temp;
+    }
+}
+int isEmpty(int queue[])
+{
+    if (front == -1 || front > rear)
+    {
+        return -1; // queue is empty
+    }
+    else
+    {
+        return 1; // queue has value
+    }
+}
+int count(int quque[])
+{
+    if (front == -1 || front > rear)
+    {
+        return 0;
     }
     else 
     {
-        printf("\n");
-        for(int index=front;index<=rear;index++)
-        {
-            printf("\t %d",quque[index]);
-        }
-        printf("\n");
+        int temp = (rear - front) + 1;
+        return temp;
     }
 }
