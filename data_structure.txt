@@ -16,3 +16,5 @@ Stack is one type of data structure in which all the items(value) are inserted a
 Queue
 ------------------------------------
 Queue is one type of data structure in which all items(values) are inserted at one end (rear end) and all items are removed from another end(front end). if queue is full then we can not insert new item into queue which is known queue overflow. if queue is empty and if we try to remove item from queue, item can not be removed and it is called queue underflow. queue can be implemented using array or Linked list. queue is FIFO data structure. FIFO means First In First Out  
+
+Circular Queue
