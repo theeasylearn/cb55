@@ -94,20 +94,27 @@ void main()
 // define(code) insert function
 void insert(int queue[], int value)
 {
-    if ((front == -1 && rear == -1) || front > rear)
+    if ((front == -1 && rear == -1))
     {
         front = 0;
         rear = 0;
         queue[rear] = value;
     }
-    else if (rear < (SIZE - 1) && rear<front)
+    else if (rear < (SIZE - 1))
     {
         rear++;
         queue[rear] = value;
     }
     else if (front > 0 && rear == (SIZE - 1))
     {
-        rear = 0;
+        if (rear == (SIZE - 1))
+        {
+            rear = 0;
+        }
+        else
+        {
+            rear++;
+        }
         queue[rear] = value;
     }
     else if (rear == (SIZE - 1))
@@ -121,37 +128,63 @@ void display(int quque[])
     {
         printf("queue is empty");
     }
-    else if (front > rear)
-    {
-        printf("queue is empty");
-    }
     else
     {
         printf("\n");
-        for (int index = front; index <= rear; index++)
+        if (front < rear)
         {
-            printf("\t %d", quque[index]);
+            for (int index = front; index <= rear; index++)
+            {
+                printf("\t %d", quque[index]);
+            }
+            printf("\n");
         }
-        printf("\n");
-    }
-}
-int delete(int queue[])
-{
-    if (front == -1 || front > rear)
-    {
-        return -1; // queue is empty
-    }
-    else
-    {
-        int temp = queue[front]; // temp = 10
-        queue[front] = 0;
-        front++;
-        return temp;
+        else
+        {
+            for (int index = 0; index <= rear; index++)
+            {
+                printf("\t %d", quque[index]);
+            }
+            for (int i = front; i < SIZE; i++)
+            {
+                printf("\t %d", quque[i]);
+            }
+            printf("\n");
+        }
     }
 }
 int isEmpty(int queue[])
 {
+    int temp = count(queue);
+    return temp;
 }
-int count(int quque[])
+int delete(int queue[])
 {
+    if (front == -1)  // queue empty
+    {
+        return -1;
+    }
+
+    int temp = queue[front];
+
+    if (front == rear) // only one element was in queue
+    {
+        front = -1;
+        rear = -1;
+    }
+    else //front 2 rear =2 
+    {
+        front = (front + 1) % SIZE; // circular move
+    }
+    return temp;
+}
+
+int count(int queue[])
+{
+    if (front == -1) // empty
+        return 0;
+    if (rear >= front)
+        return (rear - front + 1);
+    else
+        return (SIZE - front + rear + 1);
 }
