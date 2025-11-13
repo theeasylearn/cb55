@@ -1,0 +1,10 @@
+1) write a program to display your detail in  c++ using below format
+full name
+Address 
+City Pincode 
+email
+mobile no 
+
+2) write a program to accept username, password in c++ and display it in below format
+your username = ankit.patel 
+you password = 123123
